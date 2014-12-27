@@ -1,0 +1,34 @@
+.hero {
+    @phone-width: 331.5px;
+    color: white;
+
+    h1 {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        max-width: @pagewidth - @phone-width - 40px;
+    }
+
+    .container {
+        position: relative;
+        min-height: 300px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .landing-phones {
+        background: url(https://s3.amazonaws.com/com.lift.rails.assets/assets/landing-devices-45ea86ba0aa7aae56e125b00e9a62cf0.png) no-repeat scroll 0 0;
+        background-size: 100%;
+        width: @phone-width;
+        height: 455.25px;
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+    }
+}

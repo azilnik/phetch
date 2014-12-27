@@ -1,54 +1,16 @@
-@font-face: @sansfont;
-
 .siteBody {
     background-color: @purple; 
-    color:white; 	
+    color:@dark-gray; 	
 }
 
-h1 {
-    color: white;
-    font-size: @titlefont;
+.container {
+    max-width: @pagewidth;
+    margin: 0 auto;
+    padding: 200px 0 80px 0;
 }
 
-h2 {
-    color: white;
-    font-size: @subtitlefont;
-}
+// sections
 .sectionheader {
- color: black;
- font-size:@sectionfont;
-}
-
-.howitworks{
-	background-color: @aqua;
-	width: 100%;
-}
-.steps{
-	display:flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: flex-start;
-
-}
-
-.step{
-	//width: 100px;  /* Or whatever */
-	// height: 100px; /* Or whatever */
-	margin: auto;  /* Magic! */
-	color:purple;
-	padding:0.5em;
-	width:40em;
-	height:10em;
-
-}
-.emailinput{
-	display:block;
-}
-
-footer {
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-	background-color: @yellow;
-
+    text-align: center;
+    padding-bottom: 200px;
 }

@@ -1,0 +1,78 @@
+.howitworks{
+    background-color: @aqua;
+    width: 100%;
+
+    .container {
+        padding-top: 80px;
+    }
+
+    .steps{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .step{
+        .clearfix();
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        margin-bottom: 40px;
+
+        .content {
+            float: left;
+        }
+        .photo {
+            float: right;
+        }
+
+        i.number {
+            @size: 20px;
+            @margin: 20px;
+
+            border: 1px solid @dark-gray;
+            border-radius: 50%;
+            width: @size;
+            height: @size;
+            position: absolute;
+            line-height: @size;
+            left: -@size - @margin;
+            text-align: center;
+            background: rgba(255,255,255,0.3);
+            top: @size/2;
+        }
+        p {
+            max-width: 400px;
+            font-size: 24px;
+        }
+
+        .photo {
+            width: 440px;
+            height: 518px;
+            background-size: 440px 518px;
+        }
+
+        &.step-1 {
+            .photo {
+                background-image: url(http://scannrapp.com/assets/phone-3@2x-3d4cda8fa73953fa37389bb95a35a224.png);
+            }
+        }
+
+        &.step-2 {
+            .content {
+                float: right;
+            }
+            .photo {
+                float: left;
+                background-image: url(http://scannrapp.com//assets/phone-2@2x-a6b21faaa2fbd57279424e5acc0ff1f2.png);
+            }
+        }
+
+        &.step-3 {
+            .photo {
+                background-image: url(http://scannrapp.com/assets/phone-3@2x-3d4cda8fa73953fa37389bb95a35a224.png);
+            }
+        }
+    }
+}
