@@ -3,22 +3,22 @@
         {
             quote: "Phetch lets us edit our constantly M.I.A. roommate into our group pic! I keep nagging her 'Maria, why are you never hanging out with us?' Now I don't care anymore.",
             author: {
-                image: 'https://s3.amazonaws.com/com.lift.assets/landing/profile-0.jpg',
-                name: 'Sandra M.'
+                image: 'images/avatars/fluffy.png',
+                name: 'Fluffy M.'
             }
         },
         {
             quote: "With Phetch, I can photoshop my dog's head onto a baby. I hate babies.",
             author: {
-                image: 'https://s3.amazonaws.com/com.lift.assets/landing/profile-0.jpg',
-                name: 'Pauly G.'
+                image: 'images/avatars/ksco.png',
+                name: 'K. Sco'
             }
         },
         {
             quote: "An evening with phetch is one of the MOST FUN times I've EVER had!",
             author: {
-                image: 'https://s3.amazonaws.com/com.lift.assets/landing/profile-0.jpg',
-                name: 'Becky S.'
+                image: 'images/avatars/zilly.png',
+                name: 'Zilly Z.'
             }
         }
     ];
