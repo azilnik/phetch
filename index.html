@@ -10,6 +10,9 @@
 <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.1/less.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script type="text/javascript" src="js/testimonials.js"></script>
 
 </head>
 <body class="siteBody">
@@ -55,13 +58,7 @@
 </section>
 <section class="testimonials">
     <div class="container">
-        <h3 class="sectionheader">Some fake testimonials</h3>
-        <div class="testimonial-carousel"></div>
-        <div class="testimonial">Phetch let us edit our constantly M.I.A. roommate into our group pic! - Sandra M.</div>
-
-        <div class="testimonial">With Phetch, I can photoshop my dog's head onto a baby. I hate babies. - Pauly G.</div>
-
-        <div class="testimonial">An evening with phetch is one of the MOST FUN times I've EVER had! - Becky S.</div>
+        <div class="testimonial-carousel"><!-- populated from javascript --></div>
     </div>
 </section>
 <section class="signup">
@@ -70,5 +67,16 @@
     <input class="emailinput" type="text" placeholder="Enter your email"/><input type="submit" class="emailbutton" value="Give me Phetch" />
 </section>
 <footer>Made with ♥ in NYC. (stop trying to make phetch happen).</footer>
+<script type="text/template" class="testimonial">
+<div class="testimonial">
+    <div class="quote">
+        <p>"<%= quote %>"</p>
+        <div class="author">
+            <img class="profile-image" src="<%= author.image %>">
+            <span>&mdash; <%= author.name %></span>
+        </div>
+    </div>
+</div>
+</script>
 </body>
 </html>

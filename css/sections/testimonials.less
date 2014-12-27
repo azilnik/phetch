@@ -1,3 +1,92 @@
 .testimonials {
+    @height: 220px;
     color: white;
+
+    .container {
+        padding-top: 80px;
+    }
+
+    .testimonial-carousel {
+        position: relative;
+        height: @height;
+    }
+
+    .testimonial {
+        .clearfix();
+        display: none;
+        height: @height;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -350px;
+    }
+
+    .quote {
+        width: 70%;
+        margin: 0 auto;
+        height: @height;
+        overflow: hidden;
+        color: #FFF;
+        text-align: center;
+        font-weight: 200;
+        font-size: 150%;
+        line-height: 2;
+
+        p {
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            padding: inherit;
+            margin: inherit;
+        }
+    }
+
+    .author {
+        @size: 50px;
+        font-weight: 600;
+        line-height: @size;
+        display: inline-block;
+        color: rgba(255,255,255,0.8);
+        margin-top: 20px;
+
+        .profile-image {
+            float: left;
+            border-radius: 50%;
+            display: block;
+            background-color: #ebeef0;
+            background-size: cover;
+            width: @size;
+            height: @size;
+            margin-right: 15px;
+        }
+    }
+
+    ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        @dot: 10px;
+        padding-top: @height + 20px;
+        text-align: center;
+
+        li {
+            @color: rgba(255,255,255,0.8);
+            border: 2px solid @color;
+            height: @dot;
+            width: @dot;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+
+            &.active {
+                background: @color;
+            }
+        }
+    }
 }
