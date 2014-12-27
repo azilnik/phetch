@@ -1,8 +1,54 @@
+@font-face: @sansfont;
+
 .siteBody {
-    background-color: @purple;
+    background-color: @purple; 
+    color:white; 	
 }
 
 h1 {
     color: white;
+    font-size: @titlefont;
 }
 
+h2 {
+    color: white;
+    font-size: @subtitlefont;
+}
+.sectionheader {
+ color: black;
+ font-size:@sectionfont;
+}
+
+.howitworks{
+	background-color: @aqua;
+	width: 100%;
+}
+.steps{
+	display:flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: flex-start;
+
+}
+
+.step{
+	//width: 100px;  /* Or whatever */
+	// height: 100px; /* Or whatever */
+	margin: auto;  /* Magic! */
+	color:purple;
+	padding:0.5em;
+	width:40em;
+	height:10em;
+
+}
+.emailinput{
+	display:block;
+}
+
+footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	background-color: @yellow;
+
+}
