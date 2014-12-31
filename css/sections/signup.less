@@ -21,4 +21,42 @@
         margin-right: 20px;
         font-size: 24px;
     }
+
+    input[type=submit] {
+        float: right;
+        -webkit-appearance: none;
+        width: 30%;
+        background: @purple;
+        border: none;
+        font-size: 24px;
+        padding: 6px 10px;
+        color: white;
+    }
+}
+
+.mc-field-group {
+    display: inline-block;
+    width: 65%;
+
+    div {
+        margin: 0 10px;
+    }
+
+    input {
+        width: 100%;
+        margin-left: -10px;
+    }
+}
+
+#mce-responses, div.mce_inline_error {
+    margin-top: 10px;
+    display: block;
+}
+
+#mce-error-response, div.mce_inline_error {
+    color: red;
+}
+
+#mce-success-response {
+    color: green;
 }
