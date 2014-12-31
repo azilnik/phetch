@@ -1,6 +1,6 @@
 (function($) {
     var timer;
-    var duration = 200;
+    var duration = 10;
     var error, success;
 
     var initial;
