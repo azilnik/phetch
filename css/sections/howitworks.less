@@ -105,6 +105,13 @@
         width: @size;
         font-size: 40px;
         line-height: @size;
+        cursor: pointer;
+
+        .transition(0.2s);
+
+        &:hover {
+            background: rgba(255,255,255,0.2);
+        }
         
         span {
             display: block;
