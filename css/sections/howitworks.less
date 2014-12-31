@@ -1,6 +1,10 @@
 .howitworks{
-    background-color: @aqua;
     width: 100%;
+
+    .sectionheader {
+        background: @purple;
+        color: white;
+    }
 
     .container {
         padding-top: 80px;
@@ -19,28 +23,36 @@
         width: 100%;
         min-height: 500px;
         margin-bottom: 40px;
+        padding: 0 60px;
+
+        h3 {
+            color: @purple;
+        }
 
         .content {
             float: left;
+            padding-top: 200px;
         }
         .photo {
             float: right;
         }
 
         i.number {
-            @size: 20px;
-            @margin: 20px;
+            @size: 40px;
 
-            border: 1px solid @dark-gray;
             border-radius: 50%;
+            font-size: 30px;
             width: @size;
             height: @size;
-            position: absolute;
+            position: relative;
             line-height: @size;
-            left: -@size - @margin;
             text-align: center;
-            background: rgba(255,255,255,0.3);
-            top: @size/2;
+            display: block;
+            float: left;
+            background: @purple;
+            color: white;
+            margin-right: 20px;
+            font-weight: 600;
         }
         p {
             max-width: 400px;
