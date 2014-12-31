@@ -93,4 +93,25 @@
             }
         }
     }
+
+    .downwards {
+        @size: 50px;
+        height: @size;
+        width: @size;
+        display: inline-block;
+        margin-left: 10px;
+        border-radius: 50%;
+        border: 2px solid white;
+        width: @size;
+        font-size: 40px;
+        line-height: @size;
+        
+        span {
+            display: block;
+            .transform(rotate(90deg));
+            padding-bottom: 5px;
+        }
+
+    }
+
 }
