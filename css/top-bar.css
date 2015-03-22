@@ -22,12 +22,6 @@
   width: 100%;
   height: 60px;
   background-color: ppurple;
-  align-items: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
 }
 .top-bar-header {
   color: pwhite;
