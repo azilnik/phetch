@@ -1,0 +1,71 @@
+@import 'flex'
+
+profile-image-size = 30px
+
+.feed-content
+	width 100%
+	margin-bottom 60px
+
+.feed-item
+	width 100%
+.feed-item-stats
+	flex()
+	flex-direction(row)
+	justify-content(space-between)
+	align(center)
+	
+	.flex-center
+		flex()
+		flex-direction(row)
+		justify-content(flex-start)
+		align(center)
+		> *
+			margin-right 5px
+	
+	.left-align
+		flex()
+		// flex-direction(row)
+		// justify-content(space-around)
+		align(center)
+		width 100%
+		padding 5px
+		box-sizing border-box
+		flex
+		> *
+			margin-right 5px
+			
+	.right-align
+		// min-width 150px
+		flex()
+		flex-direction(row)
+		justify-content(space-around)
+		align(center)
+		padding 5px
+		box-sizing border-box
+		color ppurple
+		display inline-block
+		*
+			margin-left 5px
+			display inline-block
+
+	.user-name
+		color ppurple
+	
+	.profile-image
+		height profile-image-size
+		width profile-image-size
+		background-position center
+		background-size cover
+		background-image url("/img/profile-pics/1.jpeg")
+		border-radius profile-image-size
+		border 2px solid ppurple
+		min-width profile-image-size
+		min-height profile-image-size
+	
+.feed-item-photo
+	width 100%
+	.feed-item-photo-image
+		max-width 100%
+		height auto
+		width auto\9
+	
